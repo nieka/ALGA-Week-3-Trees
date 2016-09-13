@@ -8,19 +8,20 @@ namespace ALGA
 {
     public class Number : Expression
     {
+        private int number;
         public Number(int number)
         {
-            throw new NotImplementedException();
+            this.number = number;
         }
 
         public override String ToString()
         {
-            throw new NotImplementedException();
+            return Convert.ToString(number);
         }
 
         public override int evaluate()
         {
-            throw new NotImplementedException();
+            return number;
         }
     }
 }
