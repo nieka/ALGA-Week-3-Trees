@@ -15,7 +15,15 @@ namespace ALGA
          */
         public void insert(int number)
         {
-            throw new NotImplementedException();
+            if (root != null)
+            {
+                root.insert(number);
+            }
+            else
+            {
+                root = new Node(number);
+            }
+            
         }
 
         /**
@@ -23,12 +31,22 @@ namespace ALGA
          */
         public void delete(int number)
         {
-            throw new NotImplementedException();
+            if (root != null)
+            {
+                root = root.delete(number);
+            }
         }
 
         public bool exists(int number)
         {
-            throw new NotImplementedException();
+            if (root != null)
+            {
+                return root.exists(number);
+            }
+            else
+            {
+                return false;
+            }
         }
 
         /**
@@ -36,7 +54,14 @@ namespace ALGA
          */
         public int min()
         {
-            throw new NotImplementedException();
+            if (root != null)
+            {
+                return root.min();
+            }
+            else
+            {
+                return -1;
+            }
         }
 
         /**
@@ -44,7 +69,14 @@ namespace ALGA
          */
         public int max()
         {
-            throw new NotImplementedException();
+            if (root != null)
+            {
+                return root.max();
+            }
+            else
+            {
+                return -1;
+            }
         }
 
         /**
@@ -54,7 +86,14 @@ namespace ALGA
          */
         public int depth()
         {
-            throw new NotImplementedException();
+            if (root != null)
+            {
+                return root.dept();
+            }
+            else
+            {
+                return 0;
+            }
         }
 
         /**
@@ -63,17 +102,31 @@ namespace ALGA
          */
         public int count()
         {
-            throw new NotImplementedException();
+            if (root != null){
+                return root.count();
+            }
+            else
+            {
+                return 0;
+            }
         }
 
         public void print()
         {
-            throw new NotImplementedException();
+            if (root != null)
+            {
+                root.print();
+            }
+            Console.ReadLine();
         }
 
         public void printInRange(int min, int max)
         {
-            throw new NotImplementedException();
+            if (root != null)
+            {
+                root.printInRange(min, max);
+            }
+            Console.ReadLine();
         }
     }
 }

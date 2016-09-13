@@ -29,7 +29,7 @@ namespace ALGA
             tree.root.right.right = new Node(16);
             tree.root.right.right.left = new Node(15);
 
-            tree.print(); // Should print: 1 3 5 7 10 13 15 16
+          //  tree.print(); // Should print: 1 3 5 7 10 13 15 16
             tree.printInRange(5, 13); // Should print: 5, 7, 10, 13
         }
     }
