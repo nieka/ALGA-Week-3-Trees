@@ -73,7 +73,7 @@ namespace ALGA
             }
             if (right != null)
             {
-                deptRight = right.dept();
+                deptRight += right.dept();
             }
 
             if (deptLeft > deptRight)
